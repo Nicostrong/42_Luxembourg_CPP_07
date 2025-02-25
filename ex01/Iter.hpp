@@ -6,7 +6,7 @@
 /*   By: nfordoxc <nfordoxc@42luxembourg.lu>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 09:58:48 by nfordoxc          #+#    #+#             */
-/*   Updated: 2025/02/25 10:59:41 by nfordoxc         ###   Luxembourg.lu     */
+/*   Updated: 2025/02/25 11:23:55 by nfordoxc         ###   Luxembourg.lu     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,14 @@
 
 # include <iostream>
 
+/*
+ *	template to apply a function at each element of an array
+ */
 template <typename T>
-void	iter(T *array, size_t size, void (*f)(T const &))
+void	iter(T *array, size_t size, void (*func)( T & ))
 {
 	for (size_t i = 0; i < size; i++)
-		f(array[i]);
+		func(array[i]);
 	return ;
 }
 
