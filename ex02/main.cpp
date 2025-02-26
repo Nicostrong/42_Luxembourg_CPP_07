@@ -6,7 +6,7 @@
 /*   By: nfordoxc <nfordoxc@42luxembourg.lu>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 11:27:00 by nfordoxc          #+#    #+#             */
-/*   Updated: 2025/02/25 15:35:26 by nfordoxc         ###   Luxembourg.lu     */
+/*   Updated: 2025/02/26 10:26:42 by nfordoxc         ###   Luxembourg.lu     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int		main( void )
 		}
 		catch (std::exception &e)
 		{
-			std::cerr << "Exception caught: " << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 
 		Array<std::string>	strArray(3);
@@ -58,7 +58,7 @@ int		main( void )
 	}
 	catch (std::exception &e)
 	{
-		std::cerr << "Exception: " << e.what() << std::endl;
+		std::cerr << e.what() << std::endl;
 	}
 
 	return (0);

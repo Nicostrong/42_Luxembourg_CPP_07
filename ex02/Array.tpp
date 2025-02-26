@@ -6,7 +6,7 @@
 /*   By: nfordoxc <nfordoxc@42luxembourg.lu>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 12:39:13 by nfordoxc          #+#    #+#             */
-/*   Updated: 2025/02/25 15:36:11 by nfordoxc         ###   Luxembourg.lu     */
+/*   Updated: 2025/02/26 10:26:55 by nfordoxc         ###   Luxembourg.lu     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,5 +120,5 @@ const T	&Array<T>::operator[]( size_t index ) const
 template < typename T >
 const char	*Array<T>::OutOfLimits::what() const throw()
 {
-	return (RED "Index out of limits" RESET);
+	return (RED"Exception: index out of limits"RESET);
 }
